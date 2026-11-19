@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Animado - Esferas de Energía</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <header class="hud">
+            <div class="stat-box">Puntos: <span id="score">0</span></div>
+            <h1 class="game-title">ENERGY RUNNER</h1>
+            <div class="stat-box">Vidas: <span id="lives">3</span></div>
+        </header>
+
+        <div class="canvas-container">
+            <canvas id="gameCanvas" width="800" height="500"></canvas>
+
+            <!-- Pantalla de Inicio / Game Over -->
+            <div id="overlay" class="overlay">
+                <h2 id="overlay-title">ENERGY RUNNER</h2>
+                <p id="overlay-msg">Usa las flechas <strong>↑ ↓</strong> o el <strong>Mouse</strong> para moverte.<br>Atrapa las esferas doradas y esquiva los meteoritos.</p>
+                <button id="start-btn" class="btn-glow">JUGAR AHORA</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
